@@ -1,4 +1,7 @@
-# Task Management App
+# Task Management App Testing
+
+This project I clone from https://github.com/manthanank/task-management-app. I custome this web app with docker for practing security testing on web application.
+
 
 This is a full-stack task management application built using Angular, Node.js, Express.js, and MongoDB. The application allows users to create, edit, delete, and view tasks. It also includes user authentication with JWT, forgot and reset password functionality, and responsive design using Tailwind CSS.
 
@@ -36,22 +39,20 @@ This is a full-stack task management application built using Angular, Node.js, E
 
 ## Installation
 
-### Backend
-
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/manthanank/task-management-app.git
-    cd task-management-app/backend
+    git clone https://github.com/Malsec0x/web-app-for-testing/.git
+    cd task-management-app
     ```
 
-2. Install dependencies:
+2. Run Docker compose file:
 
     ```sh
-    npm install
+    docker-compose up --build -d
     ```
 
-3. Create a `.env` file in the `backend` directory with the following content:
+3. if you want to change a `.env` file in the `backend` directory, you can change with the following content:
 
     ```bash
     PORT=5000
@@ -61,36 +62,11 @@ This is a full-stack task management application built using Angular, Node.js, E
     EMAIL_PASS=your-email-password
     ```
 
-4. Start the backend server:
-
-    ```sh
-    npm start
-    ```
-
-### Frontend
-
-1. Navigate to the frontend directory:
-
-    ```sh
-    cd task-management-app
-    ```
-
-2. Install dependencies:
-
-    ```sh
-    npm install
-    ```
-
-3. Start the frontend server:
-
-    ```sh
-    ng serve
-    ```
 
 ## Running the Application
 
-- The backend server will run on `http://localhost:3000`.
-- The frontend server will run on `http://localhost:4200`.
+- The backend server will run on `http://localhost:5000`.
+- The frontend server will run on `http://localhost:80`.
 
 ## API Endpoints
 
