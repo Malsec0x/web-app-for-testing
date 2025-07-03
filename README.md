@@ -42,17 +42,11 @@ This is a full-stack task management application built using Angular, Node.js, E
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/Malsec0x/web-app-for-testing/.git
+    git clone https://github.com/Malsec0x/web-app-for-testing.git
     cd task-management-app
     ```
-
-2. Run Docker compose file:
-
-    ```sh
-    docker-compose up --build -d
-    ```
-
-3. if you want to change a `.env` file in the `backend` directory, you can change with the following content:
+    
+2. if you want to change a `.env` file in the `backend` directory, you can change with the following content:
 
     ```bash
     PORT=5000
@@ -62,6 +56,11 @@ This is a full-stack task management application built using Angular, Node.js, E
     EMAIL_PASS=your-email-password
     ```
 
+3. Run Docker compose file:
+
+    ```sh
+    docker-compose up --build -d
+    ```
 
 ## Running the Application
 
